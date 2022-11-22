@@ -1,16 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Just Move</title>
+  </head>
 
-<body>
-    <h1>Project Starter</h1>
+  <body>
+    <nav>
+      <button class='navBtn' id="logo">Just Move</button>
+      <button class='navBtn'>Buy</button>
+      <button class='navBtn'>Rent</button>
+      <button class='navBtn'>House Prices</button>
+      <button class='navBtn'>Find Agent</button>
+      <button class='navBtn'>Commercial</button>
+      <button class='navBtn'>Insprire</button>
+      <button class='navBtn'>Overseas</button>
+      <div class="signInNav"><i class="fa-solid fa-user"></i>Sign In</div>
+    </nav>
+    <div class="backgroundImg"></div>
+    <div class="search-container">
+      <h1>Find Your Happy</h1>
+      <p>Search properties for sale and to rent in the UK</p>
+      <div class="search">
+        <form action="">
+          <input type="text" placeholder="eg.'York', 'NW3', 'NW3 5TY' or 'Waterloo Station'" id="searchBox"><button class="searchBtn">For Sale</button><button class="searchBtn">To Rent</button>
+
+        <!--On Click run some JS that returns a prompt telling user to enter post code etc if the value = null-->
+        </form>
+      </div>
+    </div>
+    <div class="story-container">
+    
+      <div class="story">
+        <div class="storyImg"></div>
+        <div class="title">BE INSPIRED</div>
+        <div class="description">
+          <p>Our new campaign celebrates the freedom that comes with making the move you've been longing for.</p>
+        </div>
+        <div class="redirectLink"><a href="https://www.google.com">Take a look</a></div>
+      </div>
+
+      <div class="story">
+        <div class="storyImg"></div>
+        <div class="title">BE INSPIRED</div>
+        <div class="description">
+          <p>Our new campaign celebrates the freedom that comes with making the move you've been longing for.</p>
+        </div>
+        <div class="redirectLink"><a href="https://www.google.com">Take a look</a></div>
+      </div>
+
+      <div class="story">
+        <div class="storyImg"></div>
+        <div class="title">BE INSPIRED</div>
+        <div class="description">
+          <p>Our new campaign celebrates the freedom that comes with making the move you've been longing for.</p>
+        </div>
+        <div class="redirectLink"><a href="https://www.google.com">Take a look</a></div>
+      </div>
+
+      <div id="account">
+        
+        <div class="recent">
+          <img id="recentImg" src="/images/recent.png" alt="random image">
+          <button id="createAccount">Create an account</button>
+        <button id="signIn">Sign In</button>
+          <div class="recentSearches">
+            Recent searches
+            <p id="recentSearchTxt">You have no recent searches</p>
+          </div>
+          
+        </div>
+      </div>
+    </div><!--Story container-->
+  </div>
+
+
+    
+    <div class="where">
+      <h4>Where can i live?</h4>
+      <p>We've created a new tool to help you easily find the areas that match your budget and needs.</p>
+      <a href="">Discover your perfect location</a>
+    </div>
+
+    <div class="misc-container">
+      <div class="misc">
+        <div class="misc-title">
+          Sold house prices
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, quam.</p>
+        <a href="">Search Now</a>
+       </div>
+      <div class="misc">
+        <div class="misc-title">
+          Commercial property
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, odit?</p>
+        <a href="">Search Now</a>
+      </div>
+      <div class="misc">
+        <div class="misc-title">
+          Investors and landlords
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolorum.</p>
+      </div>
+      <a href="Sign Up"></a>
+    </div>
+
+    <div class="footerMenu">
+
+    </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

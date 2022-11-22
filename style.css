@@ -4,13 +4,246 @@
     box-sizing: border-box;
 }
 
+:root {
+    --priamry-color: FFFFFF;
+    --secondary-color: #F15025;
+    --third-color: #E6E8E6;
+    --fourth-color:#CED0CE;
+    --fifth-color:#191919;
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
     margin: 0;
+    background-color: var(--priamry-color);
+}
+
+.navBtn {
+    color: var(--fifth-color);
+    border: none;
+    background: none;
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+#logo{
+    position: absolute;
+    left: 300px;
+    top: -2px;
+    font-size: 1em;
+}
+
+
+
+.signInNav{
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    right: 60px;
+    margin-top: -28px;
+    border: 2px solid var(--secondary-color);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left:5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-size: .8em;
+    font-weight: 600;
+    
+    
+}
+
+.fa-user{
+    margin-right: 10px;
+}
+
+.signInNav:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--fourth-color);
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    top: 0;
+}
+
+.backgroundImg{
+    width: 96%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
+    height: 260px;
+    background-image: url('/images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.search-container{
+    margin-top: -80px;
+    width: 656px;
+    border-radius: 10px;
+    height: 190px;
+    background-color: var(--fourth-color);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.search-container h1{
+    color:var(--secondary-color);
+}
+
+.search-container p{
+    color:var(--fifth-color);
+    font-weight: 600;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    padding:8px 16px;
+}
+
+#searchBox{
+    width: 434px;
+    height: 48px;
+}
+
+.searchBtn{
+    height: 48px;
+}
+
+.story-container{
+    width: 80%;
+    margin-top: 20px;
+    /* background-color: var(--fifth-color); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.story{
+    width: 228px;
+    background: var(--fourth-color);
+
+}
+
+.storyImg{
+    background-image: url('https://media.rightmove.co.uk/homepage_pod_1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 159px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: blue;
+
+
+}
+
+.title{
+
+}
+
+.description{
+
+}
+
+.redirectLink{
+
+}
+
+#account{
+    width: 228px;
+    height: 159px;
+    text-align: center;
+
+}
+
+#recentImg{
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 100px;
+}
+
+#createAccount, #signIn{
+    width: 90%;
+    background-color: var(--secondary-color);
+    height: 48px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.recentSearches{
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+    border: 1px solid var(--fourth-color);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.recentSearches p{
+    font-weight:normal;
+    font-size: .8em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.where{
+    width: 55%;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: -20%;
+    background-color: var(--third-color);
+    padding-left: 20px;
+    border: 1px solid var(--fourth-color);
+    border-radius: 3px;
+}
+
+.misc-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 55%;
+    height: 150px;
+    margin-top: 20px;
+    text-align: start;
+    margin-left: -20%;
+    padding-left: 20px;
+    background-color: var(--third-color);
+}
+
+.misc{
+    width:30%;
+}
+
+.misc-title{
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.footerMenu{
+    width:100%;
+    height:600px;
+    background: red;
 }
