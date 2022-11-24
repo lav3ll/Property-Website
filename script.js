@@ -1,8 +1,8 @@
-const numbers = [1, 2, 3];
+const createAccountBtn = document.getElementById('createAccount')
+const accountModal = document.querySelector('.accountModal');
 
-const doubleNumArray = numbers.map((num) => {
-  return num * 2;
-});
-
-console.log(numbers);
-console.log(doubleNumArray);
+createAccountBtn.addEventListener('click', ()=>{
+  console.log('click')
+  accountModal.classList.add('.movemodal')
+  
+})
