@@ -25,8 +25,8 @@
       <h1>Find Your Happy</h1>
       <p>Search properties for sale and to rent in the UK</p>
       <div class="search">
-        <form action="">
-          <input type="text" placeholder="eg.'York', 'NW3', 'NW3 5TY' or 'Waterloo Station'" id="searchBox"><button class="searchBtn">For Sale</button><button class="searchBtn">To Rent</button>
+        <form action="" id="searhForm">
+          <input type="text" placeholder="eg.'York', 'NW3', 'NW3 5TY' or 'Waterloo Station'" id="searchBox"><button class="searchBtn" id="forSaleBtn">For Sale</button><button class="searchBtn">To Rent</button>
 
         <!--On Click run some JS that returns a prompt telling user to enter post code etc if the value = null-->
         </form>
@@ -114,21 +114,57 @@
       
 
     </div>
-    <div class="overlay active"></div>
+    <div class="overlay notActive"></div>
     <div class="accountModal">
       <div id="modalHeadingContainer">
-      <div id="createAccountMdl"></div>
-      <div id="signInMdl"></div>
+        Just Move
     </div>
-    Email Address
-    <input type="email">
-    Password
-    <input type="password">
+    <div id="accountModalHeaderSelect">
+      <div id="createAccountMdl">Create Account</div>
+      <div id="signInMdl">Sign In</div>
+    </div>
+    <form action="" id="signInForm" class="notActive">
+    <label for="">Email Address</label><br>
+    <input type="email" id="emailInput"><br>
+    <label for="">Password</label><br>
+    <input type="password" id="passwordInput"><br>
+    <p
+      <ul>
+        <li>Uppercase letter</li>
+        <li>Number</li>
+        <li>10 characters or more</li>
+      </ul>
+  </p>
     <a href="">Forgotten your password?</a>
     <input type="checkbox">Stay signed in
     <button>Sign In</button>
+  </form>
+    
 
-    </div>
-    <script src="script.js"></script>
+    <form action="" id="registerForm" class="notActive">
+    <label for="fNameInput">First Name</label><br>
+    <input type="text" id="fNameInput"><br>
+    <label for="lNameInput">Last Name</label><br>
+    <input type="text" id="lNameInput"><br>
+    <label for="postCyode">Post Code</label><br>
+    <input type="text" placeholder="Optional" id="postCode" class="input"><br>
+    <p
+      <ul>
+        <li>Uppercase letter</li>
+        <li>Number</li>
+        <li>10 characters or more</li>
+      </ul>
+  </p>
+    <a href="">Forgotten your password?</a>
+    <input type="checkbox">Stay signed in
+    <button>Sign In</button>
+  </form>
+
+</div>
+  
+
+    
+    
   </body>
+  <script src="/JS/script.js"></script>
 </html>

@@ -32,6 +32,10 @@ body {
     font-weight: 800;
 }
 
+.navBtn:hover{
+    text-decoration: underline 2px solid;
+}
+
 #logo{
     position: absolute;
     left: 300px;
@@ -110,10 +114,10 @@ nav {
     font-weight: 600;
 }
 
-form{
+#SearchForm{
     display: flex;
     justify-content: space-between;
-    padding:8px 16px;
+    
 }
 
 #searchBox{
@@ -258,18 +262,219 @@ top:0;
 }
 
 .active{
+    display: block;
+}
+
+.notActive{
     display: none;
 }
 
 .accountModal{
-    width: 300px;
+    width: 359px;
     height: 100%;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -359px;
     background-color: var(--third-color);
+    z-index: 5;
+}
+
+#modalHeadingContainer{
+    background-color: blue;
+    width: 100%;
+    line-height: 50px;
+    height:50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#accountModalHeaderSelect{ 
+    width: 100%;
+    display: flex;
+}
+
+#signInMdl, #createAccountMdl{
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    line-height: 68px;
+    width: 50%;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#signInMdl, #createAccountMdl:hover{
+    cursor: pointer;
+}
+
+.scrollBlock{
+    overflow: hidden;
+}
+
+.underline{
+    border-bottom: 4px solid var(--secondary-color);
 }
 
 .moveModal{
-    transform: translatex(300px);
+    transform: translatex(-359px);
+    transition: .7s linear;
+}
+
+#registerForm{
+    padding: 24px;
+
+}
+
+#signInForm{
+    padding: 24px;
+}
+
+#emailInput, #passwordInput{
+    width: 311px;
+    height: 48px;
+    padding:8px 16px;
+    margin: 10px 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+}
+
+#fNameInput, #lNameInput, #postCode{
+    width: 311px;
+    height: 48px;
+    padding:8px 16px;
+    margin: 10px 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+}
+
+#fNameInput:focus, #lNameInput:focus,#postCode:focus,#emailInput:focus, #passwordInput:focus{
+    outline: 3px solid var(--secondary-color);
+
+}
+
+/*             for sale page           */
+
+.main{
+    
+}
+
+.property{
+    width: 924px;
+    height: 360px;
+    border:2px solid var(--fourth-color);
+    border-radius:7px ;
+    margin: 20px auto;
+}
+
+.property:hover{
+    cursor: pointer;
+}
+
+img{
+    margin-right: 20px;
+}
+
+.badge{
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    font-size: .7em;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+
+
+.overview{
+    /* background-color: blue; */
+
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.houseInfo{
+    width: 50%;
+}
+.agent-container{
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    padding:0 0 0 16px;
+    display: flex;
+
+}
+
+#aLogo{
+    width: 100px;
+    height: 38px;
+    padding-left: 16px;
+    margin-top: 8px;
+    
+
+}
+
+.agentDetails{
+    border: none;
+    background: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.ad1{
+    text-align: center;
+   margin-left: 660px;
+    /* right: 50px; */
+}
+
+.agent-container button a{
+    text-decoration: none;
+    color: black;
+}
+
+.agent-container button a:hover:visited{
+    text-decoration: none;
+}
+
+.agentDetails:hover, .agent-container button a:hover{
+    text-decoration: underline 3px solid var(--secondary-color) !important;
+}
+
+.fa-phone,.fa-envelope{
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.fa-phone,.fa-envelope:hover{
+   cursor: pointer;
+}
+
+.displayAddress{
+    color: rgb(131, 131, 131);
+    font-size: .8em;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.listed,.available{
+    font-size: .7em;
+    color: rgb(131, 131, 131);
+}
+
+.listed{
+    position: absolute;
+    margin-top: 60px;
+}
+
+.available{
+    position: absolute;
+    margin-top: 80px;
 }
